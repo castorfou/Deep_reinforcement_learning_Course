@@ -1,0 +1,6 @@
+name: drl_simonini
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+prefix: /home/explore/miniconda3/envs/drl_simonini

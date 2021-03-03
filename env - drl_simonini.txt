@@ -1,0 +1,14 @@
+conda create --name drl_simonini python=3.7
+conda activate drl_simonini
+
+conda install databricks::tensorflow-gpu 
+conda install nb_conda scikit-image conda-forge::jupyter_contrib_nbextensions numpy conda-forge::gym
+
+# ZDoom dependencies
+sudo apt-get install build-essential zlib1g-dev libsdl2-dev libjpeg-dev \
+nasm tar libbz2-dev libgtk2.0-dev cmake git libfluidsynth-dev libgme-dev \
+libopenal-dev timidity libwildmidi-dev unzip
+
+# Boost libraries
+sudo apt-get install libboost-all-dev
+pip install vizdoom
