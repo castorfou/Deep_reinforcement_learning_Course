@@ -287,7 +287,7 @@ stack_size = 4 # Defines how many frames are stacked together
 learning_rate = 0.0001 
 num_epochs = 5000  # Total epochs for training 
 
-batch_size = 5000 # Each 1 is a timestep (NOT AN EPISODE) # YOU CAN CHANGE TO 5000 if you have GPU
+batch_size = 1000 # Each 1 is a timestep (NOT AN EPISODE) # YOU CAN CHANGE TO 5000 if you have GPU
 gamma = 0.99 # Discounting rate
 
 ### MODIFY THIS TO FALSE IF YOU JUST WANT TO SEE THE TRAINED AGENT
@@ -481,7 +481,7 @@ write_op = tf.summary.merge_all()
 #             * Calculate sum reward
 #             * Calculate gamma Gt
 
-# In[12]:
+# In[13]:
 
 
 def make_batch(batch_size, stacked_frames):
@@ -572,7 +572,7 @@ def make_batch(batch_size, stacked_frames):
 #     * Get batches
 #     * Optimize
 
-# In[13]:
+# In[14]:
 
 
 # Keep track of all rewards total for each batch
@@ -650,7 +650,7 @@ if training:
 # ## Step 8: Watch our Agent play 👀
 # Now that we trained our agent, we can test it
 
-# In[16]:
+# In[ ]:
 
 
 # Saver
