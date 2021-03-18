@@ -9,4 +9,5 @@ dependencies:
   - scikit-image
   - conda-forge::gym
   - nb_conda
+  - yapf
 prefix: /home/explore/miniconda3/envs/drl_simonini
